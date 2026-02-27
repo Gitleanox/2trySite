@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaveto - Vétérinaire Le Havre Graville</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Animaveto, clinique vétérinaire de référence au Havre quartier Graville. Médecine générale, NAC, et ostéopathie pour chiens, chats, et nouveaux animaux de compagnie.">
+</head>
+<body>
+    <!-- BACKGROUND PARALLAX ELEMENTS -->
+    <div class="parallax-bg layer-1"></div>
+    <div class="parallax-bg layer-2"></div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="glass-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Animaveto
+            </a>
+            <nav class="desktop-nav">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#boutique" class="nav-link">Boutique</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+            <button class="btn-amber" id="openModalBtnNav">Prendre RDV</button>
+            
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="accueil" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>La santé de vos compagnons, <span class="highlight-text">notre priorité au Havre.</span></h1>
+                    <p class="subtitle">Médecine générale, NAC et Ostéopathie à Graville.</p>
+                    <div class="hero-actions">
+                        <button class="btn-amber btn-large" id="openModalBtnHero">Prendre rendez-vous en ligne</button>
+                    </div>
+                    <div class="trust-indicators">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">4.9/5 sur Google Avis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero-vet.png" alt="Vétérinaire souriant examinant un chien" class="hero-img">
+                    <div class="floating-badge badge-1">
+                        <div class="badge-icon">🩺</div>
+                        <div class="badge-text">
+                            <strong>Ouvert 6j/7</strong>
+                            <span>Urgences possibles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>On soigne qui ?</h2>
+                    <p>Une équipe passionnée pour tous vos animaux de compagnie.</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3>Chiens</h3>
+                        <p>Médecine préventive, vaccination et chirurgies courantes.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 2.45.89 4.69 2.37 6.4h-.01c1.5 1.76 3.73 2.92 6.24 3.4 1.25.24 2.53.24 3.78 0 2.51-.48 4.75-1.64 6.25-3.4 1.48-1.71 2.37-3.95 2.37-6.4 0-5.52-4.48-10-10-10z"></path>
+                                <circle cx="8" cy="10" r="1.5"></circle>
+                                <circle cx="16" cy="10" r="1.5"></circle>
+                                <path d="M12 15c-1.33 0-2.5-.7-3-1.75-.1-.21.05-.45.29-.45h5.42c.24 0 .39.24.29.45-.5 1.05-1.67 1.75-3 1.75z"></path>
+                            </svg>
+                        </div>
+                        <h3>Chats</h3>
+                        <p>Consultations adaptées 'Cat Friendly' dans le calme.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6.3 5.3L4.9 3.9c-.8-.8-.8-2 0-2.8s2-.8 2.8 0l1.4 1.4"></path>
+                                <path d="M17.7 5.3l1.4-1.4c.8-.8.8-2 0-2.8s-2-.8-2.8 0l-1.4 1.4"></path>
+                                <path d="M22 13v-2c0-3.3-2.7-6-6-6H8c-3.3 0-6 2.7-6 6v2"></path>
+                                <path d="M14 22c1.7 0 3-1.3 3-3"></path>
+                                <path d="M10 22c-1.7 0-3-1.3-3-3"></path>
+                            </svg>
+                        </div>
+                        <h3>NAC</h3>
+                        <p>Expertise dédiée pour vos lapins, rongeurs et oiseaux.</p>
+                    </div>
+                    <!-- Card 4 (Highlighted) -->
+                    <div class="service-card highlighted">
+                        <div class="badge">Spécialité</div>
+                        <div class="icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                                <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                            </svg>
+                        </div>
+                        <h3>Ostéopathie Vétérinaire</h3>
+                        <p>Approche holistique pour soulager les tensions et douleurs de vos animaux de façon douce.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SHOP PREVIEW -->
+        <section id="boutique" class="shop-preview">
+            <div class="container">
+                <div class="section-header flex-header">
+                    <div>
+                        <h2>Click & Collect</h2>
+                        <p>Vos produits de qualité, disponibles rapidement à la clinique.</p>
+                    </div>
+                    <!-- Arrows for horizontal scroll via JS -->
+                    <div class="scroll-controls">
+                        <button class="scroll-btn prev" aria-label="Previous">&larr;</button>
+                        <button class="scroll-btn next" aria-label="Next">&rarr;</button>
+                    </div>
+                </div>
+                
+                <div class="horizontal-scroll" id="shopScroll">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="img-container">
+                            <img src="assets/product-1.png" alt="Croquettes Thérapeutiques">
+                            <span class="payment-label">Paiement en clinique uniquement</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Croquettes Thérapeutiques</h4>
+                            <p class="tag">Chien - Digestion</p>
+                            <button class="btn-outline reserve-btn">Réserver</button>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="img-container">
+                            <img src="assets/product-2.png" alt="Soins Bio">
+                            <span class="payment-label">Paiement en clinique uniquement</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Shampoing Soin Bio</h4>
+                            <p class="tag">Peau sensible</p>
+                            <button class="btn-outline reserve-btn">Réserver</button>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="img-container">
+                            <img src="assets/product-3.png" alt="Compléments Articulaires">
+                            <span class="payment-label">Paiement en clinique uniquement</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Compléments Articulaires</h4>
+                            <p class="tag">Mobilité - Senior</p>
+                            <button class="btn-outline reserve-btn">Réserver</button>
+                        </div>
+                    </div>
+                     <!-- Placeholder Product 4 to show scrollability -->
+                     <div class="product-card">
+                        <div class="img-container placeholder-bg">
+                            <svg viewBox="0 0 24 24" width="48" height="48" stroke="#10B981" stroke-width="2" fill="none"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                            <span class="payment-label">Paiement en clinique uniquement</span>
+                        </div>
+                        <div class="product-info">
+                            <h4>Soin Dentaire</h4>
+                            <p class="tag">Hygiène Orale</p>
+                            <button class="btn-outline reserve-btn">Réserver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="faq">
+            <div class="container faq-container">
+                <div class="section-header text-center">
+                    <h2>FAQ Dynamique</h2>
+                    <p>Toutes les réponses à vos questions.</p>
+                </div>
+                <div class="accordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="question">Quels sont vos tarifs ?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Les tarifs des actes courants (vaccination, identification) sont affichés en salle d'attente. Pour les chirurgies ou soins spécifiques, un devis détaillé vous sera fourni après la consultation.</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="question">Prenez-vous les urgences le dimanche ?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Nous faisons partie du service de garde du Havre. En cas d'urgence en dehors des horaires d'ouverture, appelez notre numéro habituel et vous serez redirigé vers le vétérinaire de garde.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="question">Où se garer à Graville ?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Un parking privatif de 4 places est réservé à nos clients juste devant la clinique. Des places de stationnement gratuit sont également disponibles dans la rue Auguste Blanqui.</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-header" aria-expanded="false">
+                            <span class="question">Dois-je prendre rendez-vous pour acheter des croquettes ?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Non, vous pouvez passer pendant nos horaires d'ouverture. Pour gagner du temps, n'hésitez pas à utiliser notre service Click & Collect pour vous assurer de la disponibilité du produit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER & SEO -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <h3>Animaveto</h3>
+                <p>Votre vétérinaire de confiance au Havre Graville. Nous assurons le bien-être de vos animaux de compagnie au quotidien.</p>
+                <div class="contact-details">
+                    <p><strong>📍 Adresse :</strong> 43 Rue Auguste Blanqui, 76600 Le Havre</p>
+                    <p><strong>📞 Téléphone :</strong> <a href="tel:0235473949">02 35 47 39 49</a></p>
+                    <p><strong>✉️ Email :</strong> contact@animaveto.fr</p>
+                </div>
+            </div>
+            <div class="footer-map">
+                <!-- Google Maps Embed Prototyping -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10360.70275525567!2d0.13454228919632861!3d49.49718420914942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e02edf11116b41%3A0xeaeb6793cfc29cf!2sGraville%2C%20Le%20Havre!5e0!3m2!1sfr!2sfr!4v1700123456789!5m2!1sfr!2sfr" width="100%" height="250" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container SEO-text">
+                <p>Optimisé pour "Vétérinaire Le Havre Graville" | Tous droits réservés &copy; 2026 Animaveto | <a href="#">Mentions Légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL (Mockup Prise RDV) -->
+    <div class="modal overlay" id="rdvModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <button class="close-btn" id="closeModalBtn" aria-label="Fermer la modale">&times;</button>
+            <div class="modal-header">
+                <h3>Prendre un rendez-vous</h3>
+                <p>Choisissez un créneau disponible pour votre compagnon.</p>
+            </div>
+            <div class="modal-body">
+                <!-- Mockup Calendar UI -->
+                <div class="mockup-calendar">
+                    <div class="calendar-header">
+                        <button class="cal-btn">&lt;</button>
+                        <span>Novembre 2026</span>
+                        <button class="cal-btn">&gt;</button>
+                    </div>
+                    <div class="calendar-grid days-labels">
+                        <div>Lu</div><div>Ma</div><div>Me</div><div>Je</div><div>Ve</div><div>Sa</div><div>Di</div>
+                    </div>
+                    <div class="calendar-grid dates">
+                        <div class="empty"></div><div class="empty"></div>
+                        <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+                        <div>6</div><div>7</div><div class="selected">8</div><div>9</div><div>10</div>
+                        <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div>
+                        <div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+                        <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div>
+                        <div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
+                    </div>
+                    <div class="time-slots">
+                        <h4>Créneaux disponibles le 8 Nov</h4>
+                        <div class="slots-grid">
+                            <button class="slot-btn disabled">09:00</button>
+                            <button class="slot-btn">10:30</button>
+                            <button class="slot-btn">11:15</button>
+                            <button class="slot-btn">14:00</button>
+                            <button class="slot-btn">16:45</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-outline" id="cancelModalBtn">Annuler</button>
+                <button class="btn-amber">Confirmer le créneau</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN SCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
